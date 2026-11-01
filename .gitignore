@@ -4,8 +4,6 @@
 !/.gitignore
 !/RESTORE.md
 !/backup-claude.ps1
-!/backup-transcripts.ps1
-!/restore-transcripts.ps1
 
 # Global instructions + settings
 !/CLAUDE.md
@@ -40,4 +38,3 @@ node_modules/
 .env*
 !.env.example
 *.log
-.transcript-stamp*
