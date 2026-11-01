@@ -6,3 +6,4 @@
 - [User Work Email](user_email.md) — work email is ashe@avwequipment.com (not sule.ashe@avwequipment.com)
 - [Constructively Assertive](feedback_assertive.md) — collaborative, calm, context-aware, firm on principles without being adversarial
 - [SO Label Printer App](project_so_ship_label.md) — Electron Windows app: JobBOSS SO → Zebra label; direct SQL (V-JOBBOSS/live); v1.3.2 (share publish pending), signed auto-updates; no cloud
+- [Claude Backup](project_claude_backup.md) — ~/.claude → private ashe-sule/claude-backup daily; chats redacted+xz -9e as Releases (no password), incremental

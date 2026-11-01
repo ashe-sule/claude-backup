@@ -6,7 +6,7 @@
 !/backup-claude.ps1
 !/backup-transcripts.ps1
 !/restore-transcripts.ps1
-!/setup-backup-password.ps1
+!/redact.sed
 
 # Global instructions + settings
 !/CLAUDE.md
@@ -41,5 +41,4 @@ node_modules/
 .env*
 !.env.example
 *.log
-.transcript-key
 .transcript-stamp*
