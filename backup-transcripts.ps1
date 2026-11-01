@@ -1,6 +1,5 @@
 # Incremental backup of Claude chat transcripts -> GitHub Release (private repo)
-# Only new/changed chats since last upload. Secrets are blanked out (redact.sed) in the
-# backup copy, then max-compressed (xz -9e). No password needed to restore.
+# Only new/changed chats since last upload, full content (private repo), max-compressed (xz -9e).
 $ErrorActionPreference = 'Stop'
 $root  = Join-Path $HOME '.claude'
 $log   = Join-Path $root 'backup.log'
@@ -18,18 +17,15 @@ set -o pipefail
 cd ~/.claude
 touch .transcript-stamp.new
 if [ -f .transcript-stamp ]; then NEWER="-newer .transcript-stamp"; else NEWER=""; fi
-LIST=$(mktemp); STAGE=$(mktemp -d)
+LIST=$(mktemp)
 { find projects -path '*/memory' -prune -o -type f $NEWER -print
   [ -z "$NEWER" ] || [ history.jsonl -nt .transcript-stamp ] && echo history.jsonl
 } > "$LIST"
 COUNT=$(wc -l < "$LIST")
-if [ "$COUNT" -eq 0 ]; then echo NOCHANGE; rm -rf "$LIST" "$STAGE"; exit 0; fi
-# copy to staging, redact secrets there (originals untouched)
-tar -cf - --ignore-failed-read -T "$LIST" 2>/dev/null | tar -xf - -C "$STAGE"
-find "$STAGE" -type f \( -name '*.jsonl' -o -name '*.json' -o -name '*.txt' -o -name '*.md' -o -name '*.log' \) -print0 \
-  | xargs -0 -r sed -E -i -f redact.sed
-tar -cf - -C "$STAGE" . | xz -T2 -9e > "$CB_OUT"
-RC=$?; rm -rf "$LIST" "$STAGE"
+if [ "$COUNT" -eq 0 ]; then echo NOCHANGE; rm -f "$LIST"; exit 0; fi
+tar -cf - --ignore-failed-read -T "$LIST" 2>/dev/null | xz -T2 -9e > "$CB_OUT"
+P=("${PIPESTATUS[@]}"); rm -f "$LIST"
+RC=0; [ "${P[0]}" -gt 1 ] && RC=${P[0]}; [ "${P[1]}" -ne 0 ] && RC=${P[1]}
 echo "FILES=$COUNT"; exit $RC
 '@ | Tee-Object -Variable res | Out-Null
     if ($LASTEXITCODE -ne 0) { throw "archive step failed (exit $LASTEXITCODE)" }
@@ -42,7 +38,7 @@ echo "FILES=$COUNT"; exit $RC
     $tag = "transcripts-$(Get-Date -f yyyy)"
     try { $rel = Invoke-RestMethod "https://api.github.com/repos/$repo/releases/tags/$tag" -Headers $h }
     catch {
-        $body = @{ tag_name = $tag; name = "Chat transcripts $(Get-Date -f yyyy)"; body = 'Incremental chat backups (secrets redacted, xz -9e). See RESTORE.md.' } | ConvertTo-Json
+        $body = @{ tag_name = $tag; name = "Chat transcripts $(Get-Date -f yyyy)"; body = 'Incremental chat backups (full content, xz -9e). See RESTORE.md.' } | ConvertTo-Json
         $rel = Invoke-RestMethod "https://api.github.com/repos/$repo/releases" -Method Post -Headers $h -Body $body -ContentType 'application/json'
     }
     $mb = [math]::Round((Get-Item $out).Length / 1MB, 1)

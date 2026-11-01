@@ -6,7 +6,6 @@
 !/backup-claude.ps1
 !/backup-transcripts.ps1
 !/restore-transcripts.ps1
-!/redact.sed
 
 # Global instructions + settings
 !/CLAUDE.md

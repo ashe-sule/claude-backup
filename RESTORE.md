@@ -11,7 +11,7 @@
 ## Chat transcripts (encrypted, separate)
 - Stored as **Releases** in this repo (`transcripts-YYYY`), not in the code.
 - Each file is max-compressed (xz -9e). First one = full, later ones = only new/changed chats.
-- Secrets (DB passwords, API keys, tokens) are blanked to `[REDACTED]` before upload via `redact.sed`. No password needed.
+- Full chat content, secrets included (repo is private). Keep GitHub 2FA on.
 
 ## Not backed up (on purpose)
 - `.credentials.json` — login token. Just run `claude` and sign in again.
