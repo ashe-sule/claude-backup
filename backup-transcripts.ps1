@@ -37,7 +37,7 @@ echo "FILES=$COUNT"
     if ($LASTEXITCODE -ne 0) { throw "archive step failed (exit $LASTEXITCODE)" }
     $res = $res -join ' '
     if ($res -match 'NOCHANGE') { Log 'OK: no new chats'; return }
-    $files = [regex]::Match($res,'FILES=(d+)').Groups[1].Value
+    $files = [regex]::Match($res,'FILES=([0-9]+)').Groups[1].Value
 
     # GitHub token from your saved git login (Git Credential Manager)
     $token = ("protocol=https`nhost=github.com`n`n" | git credential fill | Select-String '^password=').ToString().Substring(9)
