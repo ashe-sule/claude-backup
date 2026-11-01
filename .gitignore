@@ -1,0 +1,39 @@
+# ===== Claude backup: WHITELIST mode =====
+# Ignore everything, then allow only what matters for restoring.
+/*
+!/.gitignore
+!/RESTORE.md
+
+# Global instructions + settings
+!/CLAUDE.md
+!/settings.json
+
+# Global memory
+!/memory/
+
+# Per-project memory ONLY (not chat transcripts)
+!/projects/
+/projects/*/*
+!/projects/*/memory/
+
+# Custom skills
+!/skills/
+/skills/synced/
+
+# Plugin list (so they can be reinstalled) - not the cache
+!/plugins/
+/plugins/*
+!/plugins/installed_plugins.json
+!/plugins/known_marketplaces.json
+
+# Loose project files kept in this folder
+!/merge_pdfs.py
+!/AVW_Glide_Plate_Generator.spec
+
+# ===== Never back up =====
+.credentials.json
+node_modules/
+.next/
+.env*
+!.env.example
+*.log

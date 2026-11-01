@@ -1,0 +1,25 @@
+---
+name: wash-si-project
+description: "WASH-SI (B34) car wash intelligence SaaS: scope decisions, sponsor/IP status, where the repo and spec live"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: aa7f6df6-1234-4f04-94f9-156ce66d5ec6
+  modified: 2026-10-24T15:51:25.178Z
+---
+
+Wash-SI (Ashe chose this exact spelling 2026-10-21, replacing "WASH-SI"; trademark clearance still pending; "SI" = Super Intelligence) is the B34 car wash operator platform, in `projects/github-buildup/repos/wash-si`. Ashe's full build spec arrived 2026-10-20; increment 1 shipped the same day. Pushed 2026-10-21 to the private repo github.com/ashe-sule/wash-si (main).
+
+- Markets: United States and Canada ONLY (Ashe, 2026-10-20). Quebec means fr-CA, CASL, Law 25.
+- A3 Vision Ops and A4 Membership are merged into WASH-SI as future modules (Ashe, 2026-10-20).
+- AVW Equipment is the *intended* commercial sponsor, but ownership and brand are NOT authorized. Keep AVW names, logos, manuals and data out of code and UI. The only mention allowed is docs/00 OD-01.
+- Office pilot = Ashe's workplace. Anonymous vehicle counts only, and only after written permission plus signage. No plate marketing without consent and a legal review.
+
+- Resume point (2026-10-24, late): increment 2 is COMPLETE and pushed (offline fd43c37, photos 411c0ef, export + dependency patches b466661). 143 unit/API + 10 browser tests, npm audit 0. A 3-reviewer QA pass produced verified bug lists (server: lock-order deadlock audit vs wo: lock, unauthenticated stall from JSON.stringify of upload bodies in offlineHeaders, unlimited /api/auth body, MFA per account not per session, zero-owner race, etc.; client: offline sign-out, false "Nothing was saved" on 'gone', hydration #418 from useState(outboxSupported), English Zod errors, etc.) plus a product critique recommending car counts/downtime $, alerts, parts on WOs and a tunnel template much earlier. Full lists in ROADMAP.md session log. UPDATE later 2026-10-24: Ashe approved; all QA fixes pushed (230828c, migration 0007) and docs/G rewritten (239b08f): S1 (from Mon 2026-10-26) = Phase 0 + legal/outreach; S2-S3 tunnel template + categories + setup checklist; S3 car counts + estimated $ lost to downtime; S4 alerts, parts/labour, checklist today view. 157 unit/API + 15 browser tests. After changing rbac.ts, run `npm run db:migrate` on the dev DB (it syncs permissions). Hosting NOT decided (Azure only "preferred"); it now also blocks photo storage + malware scanner (L-22). Plate-recognition/membership (A3/A4) were offered as an option B after increment 2; Ashe never picked.
+- 2026-10-24 e2e ran against Ashe's `.data` dev DB (production build + next start for the service worker), which added synthetic "(Demo)" test orgs there. Next time prefer the throwaway-DB route below.
+- Ashe's PC runs Malwarebytes. Its Ransomware Protection blocked node.exe on 2026-10-23 during a test run (embedded Postgres plus next dev); after that, every Node start failed with "Access is denied", even outside the sandbox. If that error shows up, check C:\ProgramData\Malwarebytes\MBAMService\LOGS\mbamservice.log and ask Ashe to allow node.exe. Never change the security software yourself.
+- Ashe's PC has only ~16 GB RAM and runs low often. Claude Code kills the background dev servers, so suggest Ashe runs db:start, dev:api and dev:web in their own terminals.
+- For browser tests without touching Ashe's `.data` dev DB: start a throwaway embedded Postgres, then the API (env overrides `.env`, because process.loadEnvFile does not overwrite variables already set) and `next dev`. `next dev` creates apps/web/AGENTS.md + CLAUDE.md and edits next-env.d.ts; revert those afterwards.
+
+**Why:** the IP and employer boundary matter; see [[buildup-roadmap-location]]. Spec principles: never fabricate data, show "Data unavailable" instead of zero, AI never controls equipment.
+**How to apply:** read `docs/I-increment-1-status.md` (limitations, open decisions) and `docs/G-work-breakdown-24-weeks.md` (next phases) before continuing.

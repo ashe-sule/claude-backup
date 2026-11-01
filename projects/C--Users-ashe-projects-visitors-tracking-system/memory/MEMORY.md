@@ -1,0 +1,4 @@
+- [Free tools only](free-tools-only.md) — no paid licenses/subscriptions; prefer open-source
+- [AVW private backup location](avw-private-backup-location.md) — Documents\AVW-private-backup holds quote analysis + scratch, never in repo
+- [Git commit email for Vercel](git-commit-email-vercel.md) — commit as sule.ashe@yahoo.com; avwequipment.com author blocks Vercel deploys
+- [AVW list price, no discounts](avw-list-price-no-discounts.md) — show list price, "negotiable, contact sales"; AVW doesn't install

@@ -1,0 +1,44 @@
+{
+  "model": "opus",
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true
+  },
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "theme": "dark",
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Bash(git push:*) targeting equipmentx/avw-internal-request-hub — CLAUDE.md marks this repo as live production that must never be touched by qb-sync sessions",
+      "Any HubSpot API call or webhook write using HUBSPOT_ACCESS_TOKEN_PRODUCTION or targeting Hub ID 21617654 — CLAUDE.md treats every prod HubSpot call as a red-button action requiring Ashe's explicit go-ahead"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: AVW Equipment Co Inc (Car Wash Manufacturing) — this repo (qb-sync) is an internal tool; no multi-repo org policy configured beyond this project",
+      "**Cloud provider(s)**: Vercel (hosting — https://qb-sync-one.vercel.app/), Neon Postgres (database)",
+      "**Repository visibility**: not queryable here (gh visibility check failed) — treat as possibly public per shipped-default guidance; scope commits/pushes to this repo's own work only until visibility is confirmed",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: Local `.env.local` (git-ignored) for DATABASE_URL, QBWC_USERNAME, QBWC_PASSWORD, QBWC_FILE_ID, QBWC_OWNER_ID, HUBSPOT_ACCESS_TOKEN_SANDBOX, HUBSPOT_ACCESS_TOKEN_PRODUCTION; mirrored into Vercel project settings for production — never paste live connection strings/tokens into chat (per CLAUDE.md); Neon connection string known to have been pasted into an earlier chat session and should be rotated",
+      "**Default / protected branches**: not queryable here (gh check failed) — treat branch protection as unknown/unverified",
+      "**CI/CD deploy targets**: Vercel project for qb-sync (https://qb-sync-one.vercel.app/) — production deploy target; promote only after local verification per CLAUDE.md",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume an ordinary developer machine (Windows, per global CLAUDE.md) with open internet",
+      "**Source control**: This repo (github.com/ashe-sule/qb-sync) and its origin remote only",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: QuickBooks Web Connector (QBWC) on the dedicated QB PC, polling `POST /api/qbwc` — NOT a generic external service; HubSpot Standard Sandbox (Hub ID 50557468) for qb-sync development/testing",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: `.env.local` and Vercel env vars (DB and QBWC/HubSpot credentials); Neon Postgres `qb_sync_queue`/`qb_sync_log` tables (may hold business data from customer/vendor/item submissions); `C:\\Users\\ashe\\OneDrive - AVW Equipment Company Inc\\Documents\\` (Customer.xlsx, Vendor.xlsx, Items.xlsx) — share only with Ashe/AVW staff cleared for this data",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: HubSpot production (Hub ID 21617654) — CLAUDE.md explicitly forbids calling this from qb-sync until sandbox flow is fully verified and Ashe explicitly authorizes; any namespace/host/container whose name carries `prod` or `production` as a whole word or segment; `avwforms.vercel.app` and its repo `equipmentx/avw-internal-request-hub` are live production — read-only, never edit/deploy/change env vars there",
+      "**Protected deployment namespaces / environments**: Vercel production deployment of qb-sync (qb-sync-one.vercel.app); QBWC against the real production QuickBooks company file (as opposed to AVW-SANDBOX.QBW) — treat as prod once real QB writes are exercised",
+      "**Protected IaC scopes**: None configured beyond shipped default (IAM, RBAC, networking, quota, node-pool resources tagged prod/production)",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development — syncing QuickBooks Desktop data via a Next.js/Postgres/QBWC bridge for AVW Equipment Co",
+      "**Trusted repo**: github.com/ashe-sule/qb-sync (this repo, working directory C:\\Users\\ashe\\projects\\qb-sync) and its origin remote",
+      "**Org-specific CLIs**: None configured",
+      "**Routine under C:\\Users\\ashe\\projects\\qb-sync\\ prefix**: local dev (`npm run dev`, `npm install`, lint/build/start scripts), edits to this repo's source, docs, and schema files — schema changes still require Ashe's explicit sign-off per CLAUDE.md"
+    ]
+  },
+  "skipDangerousModePermissionPrompt": true
+}

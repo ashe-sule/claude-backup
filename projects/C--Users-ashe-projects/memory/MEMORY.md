@@ -1,0 +1,9 @@
+- [GitHub buildup plan](github-buildup.md) — ALL repos PRIVATE (2026-10-16); showcase on ashesule.com only; hub at projects/github-buildup
+- [Git identity leak](git-identity-leak.md) — NEVER let git guess/expose the AVW email; useConfigOnly is on; noreply for public repos
+- [Product ideas method](product-ideas-method.md) — brainstorm with a 'what do businesses pay for monthly' sweep, not just named domains
+- [Two tracks: ASHE + AVW](two-tracks-ashe-avw.md) — Ashe's own products to sell vs growing AVW at scale; keep separate, tag every idea
+- [Nexucentri](nexucentri.md) — Ashe's real company; products branded "by NexuCentri" (e.g. Sealed); never a fake/phish domain
+- [Brand voice: professional](brand-voice-professional.md) — taglines/copy formal, not catchy; offer options first
+- [AVW Invoice Generator](avw-invoice-generator.md) — Publisher invoice replacement, live on Vercel; paused 2026-10-19, resume from ROADMAP.md
+- [Hebron Consults site](hebron-consults.md) — veteran-owned gov contractor site, committed locally, not pushed/deployed; open questions in README
+- [AVW SmartCare](avw-smartcare.md) — installed-base/PM/aftermarket platform; strategy docs drafted 2026-10-30, no code until approved
