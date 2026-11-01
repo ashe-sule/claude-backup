@@ -16,5 +16,8 @@ if (git status --porcelain) {
 } else {
     Log 'OK: no changes'
 }
+# encrypted incremental chat transcripts -> GitHub Release
+& (Join-Path $repo 'backup-transcripts.ps1')
+
 # keep log small
 if ((Get-Item $log).Length -gt 100KB) { Get-Content $log -Tail 200 | Set-Content $log }
