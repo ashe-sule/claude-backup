@@ -1,0 +1,1 @@
+- [PNR Import Kiosk](pnr-import-kiosk.md) — separate Excel→HubSpot NPR/CEP importer project; no 365 login, access code only
