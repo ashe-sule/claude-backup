@@ -1,0 +1,1 @@
+- [User feedback backlog (2026-11-04)](user-feedback-backlog-2026-11-04.md) — pending data fixes + Copy/multi-select/uppercase requests, not started; open questions listed
