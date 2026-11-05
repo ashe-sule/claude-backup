@@ -1,1 +1,1 @@
-- [User feedback backlog (2026-11-04)](user-feedback-backlog-2026-11-04.md) — pending data fixes + Copy/multi-select/uppercase requests, not started; open questions listed
+- [AVW schedule v1.3.0 on V2 link](user-feedback-backlog-2026-11-04.md) — V2 live with Approvals + site voltage; engineers still on old link; admin/user roles planned; GCBTL/vacuum rule pending

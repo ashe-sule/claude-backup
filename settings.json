@@ -1,10 +1,12 @@
 {
   "model": "opus",
   "enabledPlugins": {
-    "vercel@claude-plugins-official": true
+    "vercel@claude-plugins-official": true,
+    "sentry@claude-plugins-official": true
   },
   "autoUpdatesChannel": "latest",
   "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
   "autoMode": {
     "soft_deny": [
@@ -39,6 +41,5 @@
       "**Org-specific CLIs**: None configured",
       "**Routine under C:\\Users\\ashe\\projects\\qb-sync\\ prefix**: local dev (`npm run dev`, `npm install`, lint/build/start scripts), edits to this repo's source, docs, and schema files — schema changes still require Ashe's explicit sign-off per CLAUDE.md"
     ]
-  },
-  "skipDangerousModePermissionPrompt": true
+  }
 }

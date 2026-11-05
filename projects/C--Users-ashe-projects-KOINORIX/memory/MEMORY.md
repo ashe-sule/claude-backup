@@ -1,0 +1,1 @@
+- [Founder context](koinorix-founder-context.md) — solo owner + Claude, USA/Canada SMBs first, no demand evidence yet

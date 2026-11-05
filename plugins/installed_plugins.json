@@ -10,6 +10,16 @@
         "lastUpdated": "2026-09-23T17:16:46.313Z",
         "gitCommitSha": "b4803caa71cf3277f1178f35f7189f9b8d20f6bb"
       }
+    ],
+    "sentry@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ashe\\.claude\\plugins\\cache\\claude-plugins-official\\sentry\\1.4.0",
+        "version": "1.4.0",
+        "installedAt": "2026-11-05T16:12:42.635Z",
+        "lastUpdated": "2026-11-05T16:12:42.635Z",
+        "gitCommitSha": "73e53541d7af21672e27428c7067f4264b8a3d65"
+      }
     ]
   }
 }
