@@ -1,0 +1,1 @@
+- [JB/QB export email](jb-qb-export-email.md) — planned twice-weekly emailed JB+QB Excel; decisions made 2026-11-09

@@ -1,0 +1,2 @@
+- [Project status](project-status.md) — where work stands (2026-11-09), deploy method, open items; read on "where did we stop?"
+- [Engineering rule sources](engineering-rule-sources.md) — engineer email Q&A drives rules; sample quote paths; Master xlsx must be edited via Excel

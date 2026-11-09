@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 61b056e4-0589-4925-9847-17cde7891388
-  modified: 2026-11-05T22:33:33.485Z
+  modified: 2026-11-09T15:42:14.536Z
 ---
 
 **Current setup (2026-11-05):**
@@ -24,7 +24,19 @@ metadata:
 - Approved suggestions apply only to NEW projects (frozen into meta). The Master xlsx itself is not rewritten; "Download approved changes" gives a workbook for updating it in Excel.
 
 **Still open:**
-- Waiting on the engineer: GCBTL details (not in any list) and which "vacuums" get VA3246S/GCBTL as children (producers VAC-xxHP or arches VA5129A...).
+- GGBTL / vacuum rule (engineer replied 2026-11-09). "GCBTL" was a typo for **GGBTL**, which is already in the Master at row 1007 (1-ph, 120 V, 0.25 A, correct).
+  - Rule: every vacuum ARCH (VA5129A family, VA2567 family, VA4847A, VA3352-16, duals) gets 1× GGBTL as a child.
+  - Producers (VAC-xxHP) get only their motor; the Master is already right.
+  - VA3246S separator is a child only when it's stated in the quote, which is already how it works.
+  - Ashe approved the change. NOTHING edited yet: on 2026-11-09 Ashe emailed the engineer 4 questions and is waiting on the answers:
+    1. When the quote already lists GGBTL (EQ-1-1143 has 36), use the quote's count and don't add it again?
+    2. Do dual arches (VA3352-17, VA3352-17-4141, 2VA2567A, 2VA0524) get 1 or 2 GGBTL?
+    3. Leave out the canopy arches VA5129B and VA0324?
+    4. Does VACUTECH keep its VFD?
+  - Once answered: add GGBTL children through Excel COM, add the engine dedupe for the quote's own GGBTL line, run the tests and the 9 quotes (EQ-1-1140, 1146, 1200, 1202 gain lights), bump the version, deploy to V2 only.
+- Sample quotes: `C:\Users\ashe\OneDrive - AVW Equipment Company Inc\Information Technology - Documents\Aroon\Quotes\9 QUOTE PDF\`.
+- The scratchpad was wiped on reboot, along with the old Master backups and the venv. To rebuild: `py -3.11 -m venv <scratchpad>\venv`, then `pip install -r requirements.txt pytest`. Back up the Master again before editing it.
+- The 2026-11-09 engineer email also asked about the 400 V amps and the reclaim unit (both below).
 - Engineer's drawing for South Morang used a Sobrite 100 GPM reclaim unit, but the quote has FilterIt 20 GPM. Flag it to the engineer.
 - `motor_amps.csv` has 400 V values from one drawing only; the engineer should confirm and extend it.
 - Later: switch the engineers over to v2. The 5 old projects can't be imported without bengilashe's code; export them to Excel first.
