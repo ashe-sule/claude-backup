@@ -1,1 +1,3 @@
 - [Founder context](koinorix-founder-context.md) — solo owner + Claude, USA/Canada SMBs first, no demand evidence yet
+- [Project status](koinorix-project-status.md) — last milestone M11 done; next M12 Tickets; open owner steps
+- [ashesule.com site](ashesule-site.md) — owner's portfolio repo (ashe-portfolio), where KOINORIX pics get posted

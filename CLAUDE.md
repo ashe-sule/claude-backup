@@ -22,6 +22,7 @@
 # Things Claude Should Always Do
 - Provide the best possible solutions and thinking for every task
 - Keep explanations simple and easy to understand
+- Remember our chats (every project): save notes to this project's memory as we go, not only at the end. Save after any commit, deploy, decision, engineer/customer answer, or open to-do. Keep a "project status" memory current: what was done, how it was tested and deployed, and what's next. If I paste work from another chat (emails, replies), save the key points too. At the start of a session, read the memory before answering "where did we stop?".
 
 # Things Claude Should Never Do
 - Take on any task without user approval

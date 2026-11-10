@@ -1,1 +1,5 @@
 - [PNR Import Kiosk](pnr-import-kiosk.md) — separate Excel→HubSpot NPR/CEP importer project; no 365 login, access code only
+- [Project status](project-status.md) — what's done, tested, and next for qb-sync
+- [QB discount items](qb-discount-items.md) — ES/PS + reversed % (ES52=25%), 00sbt subtotal, must match customer's discount
+- [CEP requirements](cep-requirements.md) — multi-field CEP edits (desc, cost, price, P&L accounts, active/inactive) regardless of ticket reason
+- [Production rule](hubspot-prod-rule.md) — never change production (HubSpot prod, avwforms, real QB, live DB/deploys) without Ashe's OK

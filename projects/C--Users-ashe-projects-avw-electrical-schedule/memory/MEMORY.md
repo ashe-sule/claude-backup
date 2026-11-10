@@ -1,2 +1,3 @@
 - [Project status](project-status.md) — where work stands (2026-11-09), deploy method, open items; read on "where did we stop?"
+- [Save chats as we go](save-chats-as-we-go.md) — Ashe wants all chats remembered; update memory during every session
 - [Engineering rule sources](engineering-rule-sources.md) — engineer email Q&A drives rules; sample quote paths; Master xlsx must be edited via Excel
