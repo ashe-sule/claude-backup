@@ -2,4 +2,5 @@
 - [Project status](project-status.md) — what's done, tested, and next for qb-sync
 - [QB discount items](qb-discount-items.md) — ES/PS + reversed % (ES52=25%), 00sbt subtotal, must match customer's discount
 - [CEP requirements](cep-requirements.md) — multi-field CEP edits (desc, cost, price, P&L accounts, active/inactive) regardless of ticket reason
+- [QB unattended setup](qb-unattended-setup.md) — users never need QB; QB PC + QBSync user, single-user once, multi-user daily, stay logged into Windows
 - [Production rule](hubspot-prod-rule.md) — never change production (HubSpot prod, avwforms, real QB, live DB/deploys) without Ashe's OK

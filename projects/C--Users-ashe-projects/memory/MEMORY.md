@@ -6,4 +6,5 @@
 - [Brand voice: professional](brand-voice-professional.md) — taglines/copy formal, not catchy; offer options first
 - [AVW Invoice Generator](avw-invoice-generator.md) — Publisher invoice replacement, live on Vercel; paused 2026-10-19, resume from ROADMAP.md
 - [Hebron Consults site](hebron-consults.md) — veteran-owned gov contractor site, committed locally, not pushed/deployed; open questions in README
+- [AV-WALDO](av-waldo.md) — AVW dispatch/GPS/delivery app for Kenny; folder created 2026-11-11, Phase 0 next, no code yet
 - [AVW SmartCare](avw-smartcare.md) — installed-base/PM/aftermarket platform; strategy docs drafted 2026-10-30, no code until approved

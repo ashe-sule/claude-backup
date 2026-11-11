@@ -1,0 +1,4 @@
+- [Project status](project-status.md) — AV-WALDO: what's done, tested, next
+- [AV-WALDO decisions](av-waldo-decisions.md) — DB later, Google Maps w/ sim mode, web-first scope
+- [TODO auto-optimize](todo-auto-optimize.md) — approved build for 2026-11-12: auto stop ordering, approve card when driving, urgent=tie-breaker
+- [Waiting on user](waiting-on-user.md) — open items/keys/decisions needed from Ashe

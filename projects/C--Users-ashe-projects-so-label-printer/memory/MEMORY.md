@@ -1,2 +1,3 @@
 - [Publish = update share](publish-means-update-share.md) — "publish" means signed push to \\v-server update folder, then verify the hash
 - [v1.4.x open items](v1-4-0-open-items.md) — v1.4.1 live 2026-10-29; Zebra test prints + PC update still unconfirmed
+- [SQL login failure on new PC](sql-login-failure-new-pc.md) — FIXED 2026-11-11 (wrong username, password reset); Ashe_SQL_RO is read-only on all of live; follow-ups open
