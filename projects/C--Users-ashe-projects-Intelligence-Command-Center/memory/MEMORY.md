@@ -1,0 +1,3 @@
+- [Project status](project-status.md) — AVW-ICC build progress, decisions, open questions, next steps
+- [AVW environment facts](avw-environment-facts.md) — QB 24, JobBOSS 18 (V-JOBBOSS/live), Azure, sandbox QB ends Apr 2025, proven tables & link fields
+- [TO-DO: rotate passwords](todo-rotate-passwords.md) — remind Ashe to rotate JobBOSS/qb-sync/agent secrets when the build is done

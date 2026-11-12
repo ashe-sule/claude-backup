@@ -1,3 +1,4 @@
 - [AVW does no servicing](avw-no-servicing.md) — Service requests page on hold; discuss with Timmer first
 - [SmartCare review fix list](smartcare-review-fix-list.md) — running list from Ashe's page-by-page review; fix after review ends
-- [Often bought together unmerged](often-bought-together-unmerged.md) — live locally, branch not merged/pushed; ask Ashe next session
+- [Project status](project-status.md) — current state, deploy decisions, next steps (keep updated)
+- [Data sources roadmap](data-sources-roadmap.md) — QB = 2025 snapshot (to Apr 17 2025) for now; go-live = real-time JB + QB

@@ -1,3 +1,3 @@
 - [Founder context](koinorix-founder-context.md) — solo owner + Claude, USA/Canada SMBs first, no demand evidence yet
-- [Project status](koinorix-project-status.md) — M18 notifications committed (all green); next M19 forecasting + targets; E2E in 1–2 file batches
+- [Project status](koinorix-project-status.md) — All milestones + showcase done; KOINORIX live on ashesule.com (87121a0, first card); E2E one batch at a time, E2E_PORT=3110 if 3100 busy
 - [ashesule.com site](ashesule-site.md) — owner's portfolio repo (ashe-portfolio), where KOINORIX pics get posted
