@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 As of 2026-11-11 end of session, waiting on the user for:
-1. ANTHROPIC_API_KEY in apps/web/.env.local (+ monthly spend limit in Anthropic Console) → then test PO reader on a real PO.
+1. ANTHROPIC_API_KEY: DONE 2026-11-13 (user added to apps/web/.env.local; PO reader tested OK). Still need: confirm Anthropic monthly spend limit set; add key to Vercel env at deploy.
 2. User's "other things to add" (features) — collect before building [[todo-auto-optimize]] on 2026-11-12.
 3. Go-ahead + GitHub & Vercel accounts to deploy (needed for Kenny's real phone + https GPS).
 4. Email sending choice (M365 SMTP relay vs Resend) + DNS access for avwequipment.com.

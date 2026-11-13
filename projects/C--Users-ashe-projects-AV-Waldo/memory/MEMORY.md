@@ -2,3 +2,5 @@
 - [AV-WALDO decisions](av-waldo-decisions.md) — DB later, Google Maps w/ sim mode, web-first scope
 - [TODO auto-optimize](todo-auto-optimize.md) — approved build for 2026-11-12: auto stop ordering, approve card when driving, urgent=tie-breaker
 - [Waiting on user](waiting-on-user.md) — open items/keys/decisions needed from Ashe
+- [Driver view = simple](driver-view-simple.md) — drivers not tech-savvy; keep driver screen minimal, push work to system/dispatch
+- [Same-day dispatch](same-day-dispatch.md) — no queue: submit → auto-added to Kenny's route today (late → next workday), auto-publish
