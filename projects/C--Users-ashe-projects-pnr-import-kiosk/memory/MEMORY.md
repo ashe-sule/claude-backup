@@ -1,3 +1,3 @@
-- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-10)
+- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-16)
 - [JB/QB export](jb-qb-export-email.md) — kiosk download button live; email dropped 2026-11-10
 - [Kiosk users + history](kiosk-users-history.md) — per-user codes, Neon history, weather greeting (2026-11-10)
