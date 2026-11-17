@@ -3,3 +3,5 @@
 - [CloudSpend IQ project](cloudspend-iq-project.md) — FinOps app repo, all 5 phases committed + on portfolio (2026-10-28)
 - [Portfolio site status](portfolio-site-status.md) — upgrade live 2026-10-29, "IT Professional" title, keep 15+ stat, open to-dos
 - [Portfolio contact = LinkedIn only](portfolio-contact-linkedin-only.md) — never show an email on ashesule.com
+- [KOINORIX project](koinorix-project.md) — CRM + help desk SaaS, 15 local commits unpushed (2026-11-17)
+- [CORYNEXA ERP project](corynexa-erp-project.md) — full job-shop ERP like JobBOSS, own project folder (NOT github-buildup), ideas only, spec drafted 2026-11-17

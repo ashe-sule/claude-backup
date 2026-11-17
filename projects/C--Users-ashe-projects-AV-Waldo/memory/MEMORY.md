@@ -4,3 +4,5 @@
 - [Waiting on user](waiting-on-user.md) — open items/keys/decisions needed from Ashe
 - [Driver view = simple](driver-view-simple.md) — drivers not tech-savvy; keep driver screen minimal, push work to system/dispatch
 - [Same-day dispatch](same-day-dispatch.md) — no queue: submit → auto-added to Kenny's route today (late → next workday), auto-publish
+- [TODO daily pickup report](todo-daily-pickup-report.md) — PARKED: 5 PM pickups-only email; email method + recipients TBD
+- [AV-WALDO 2.0 brief](av-waldo-2-brief.md) — strict approval rules + 4-phase tracking roadmap; proposal given 2026-11-17, awaiting approval

@@ -8,4 +8,5 @@
 - [Hebron Consults site](hebron-consults.md) — veteran-owned gov contractor site, committed locally, not pushed/deployed; open questions in README
 - [AV-WALDO](av-waldo.md) — AVW dispatch/GPS/delivery app for Kenny; folder created 2026-11-11, Phase 0 next, no code yet
 - [AVW SmartCare](avw-smartcare.md) — installed-base/PM/aftermarket platform; strategy docs drafted 2026-10-30, no code until approved
+- [AVW Marketing Workspace](avw-marketing-workspace.md) — rebuild of marketing team's ChatGPT tracker; Studio redesign approved + built on git branch studio-redesign 2026-11-17, local only, not deployed
 - [Market Research](market-research.md) — folder created 2026-11-12 at projects/Market Research; empty, scope TBD

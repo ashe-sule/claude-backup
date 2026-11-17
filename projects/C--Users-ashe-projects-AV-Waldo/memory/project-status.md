@@ -76,3 +76,52 @@ AV-WALDO = AVW Equipment internal dispatch/GPS/pickup-delivery app (driver: Kenn
 - 2026-11-13: Map fix (commit after 8663e60). /map with no route today now redirects to the next route day (?date=&auto=1), the map re-fits when the date changes (key=date), and a dashed route line is drawn AVW→stops→AVW. Server-side check: 10 stops in the payload for 11/16. Not visually checked in a browser.
 
 **2026-11-13 PO reader live test PASSED:** user added ANTHROPIC_API_KEY to .env.local. Sample customer PO (Sudsy Shine, PO SS-44817, ship-to Plainfield IL) read in ~4s via extract.ts (vitest harness in scratchpad po-test/, server-only aliased to empty.js). All fields correct: delivery trip type, ship-to (not AVW/vendor addr), contact, PO ref, 3 items, required date, dock notes, no warnings. Note: requestedDate is extracted but same-day mode ignores it (no date field). Next: real AVW PO test in the app UI, spend limit confirm.
+
+**2026-11-17:** User demoing the app NOW. Prod build running via `next start -p 3010` from main folder (background). My work happens in git worktree C:/Users/ashe/projects/AV-Waldo-work (branch work/next-fixes) so the demo isn't disturbed. Don't write live DB test data until the user says the demo is done (same live Supabase). Plan approved: click-through test → deploy (deploy still needs GitHub/Vercel accounts). Daily pickup report parked ([[todo-daily-pickup-report]]).
+- 2026-11-17 commit 1f99e9c on branch work/next-fixes (worktree AV-Waldo-work, NOT merged into master yet). Migration 20261117000011_roll_forward_publish.sql: roll_route_forward allows today (rejects past dates) and auto-publishes the receiving route + notifies the driver when auto_schedule is on. Missed-routes card defaults to today on weekdays before the cutoff (min = today). 76/76 tests, tsc and eslint OK. NOT pushed live (needs the user's OK, and only after the demo). Demo note: the live app still only allows tomorrow+ for "Move stops to this day".
+- Next after "demo done": push 0011 → merge to master → click-through test on live → split-long-day option → deploy (needs GitHub/Vercel).
+- 2026-11-17 user said "demo done, push it": demo server stopped; work/next-fixes fast-forward merged into master (1f99e9c); migration 0011 pushed LIVE and verified (live roll_route_forward has the new past-date check). Live routes: 11/12 cancelled, 11/16 draft with 10 pending stops (missed). Next: click-through test (approved earlier), split-long-day decision pending from the user.
+- 2026-11-17 CLICK-THROUGH TEST (headless Playwright, scripts in session scratchpad e2e/; Chrome extension wasn't connected). PASSED: dispatcher login, missed-route alert, "Move stops to this day" (defaults to today, the moved route 87c693f2 is auto-published + auto-optimized: 576 mi / 13.8 h, ends after midnight), live map (labels overlap a bit near Chicago), employee submit (AVW-261117-001 E2E test pickup, Elgin, landed on today's route in ~2 s), driver on phone width: start shift, arrive, Confirm locked until photo, Gary pickup (AVW-261113-005) completed with photo + "released by", dispatch sees the photo, reports page OK.
+  BUG FIXED: employee request page crashed after submit (stop null under RLS) → commit e266d93, merged to master, verified on dev copy. Port 3010 restarted with the new build.
+  FINDINGS for user (not fixed, need decisions): (1) driver gets a pile of must-tap alerts from automatic re-orders (12 unacked for Kenny-TEST; only 5 shown at a time) — conflicts with [[driver-view-simple]]; propose one combined "route changed" note and no alerts for silent re-plans. (2) No warning when a day runs past driver hours/midnight or windows are missed (Gary 8-11 window, ETA 12:23 PM) → ties to split-long-day. (3) Driver alert text shows raw date "2026-11-17". (4) "Dispatch added …" wording when an employee added it.
+  Test leftovers LIVE: Kenny-TEST on shift since 11:34 AM; AVW-261117-001 E2E pickup on today's route; Gary pickup completed.
+- 2026-11-17 user said "fix all" → commit a638079 (merged to master, NOT pushed live): migration 20261117000012_calmer_driver_alerts.sql = route-change alerts only while driver on shift/route started, ONE combined "Your route changed" per route (dedupe route_change:<id>, latest 3 lines), silent re-plan within 2 min of Start shift, clears old route_updated backlog, _fmt_day friendly dates, "was added to your route" wording, setting max_route_hours=10, RPC move_stops_forward. Route page LongDayCard: too long / missed windows + "Move N stops to <next workday>" (dispatch taps). Verified the card on today's route (13.8 h, suggests moving Rockford + Milwaukee to Wed 11/18). 80 tests pass, build OK. WAITING: user OK to push 0012 live, and whether to tidy test leftovers.
+- 2026-11-17 user said "push it": migration 0012 pushed LIVE + verified (move_stops_forward exists, max_route_hours=10, new wording/dates, 0 open route_updated alerts). App rebuilt and running on 3010 from master a638079. Test leftovers tidy-up still awaiting the user's answer.
+- 2026-11-18 PHASE 1 BUILD (user said "Proceed and build"): commit 5f67ae5 on branch work/next-fixes (worktree), NOT merged into master, NOT live.
+  Migration 20261118000013_tracking_reliability.sql:
+  - proof rules in the DB: driver_complete_stop wrapper over _driver_complete_stop_core; photo must exist in storage under a request on the stop; delivery needs the recipient name
+  - driver_report_gps_status + driver_shifts.gps_status
+  - tracker_ingest (server key only, tracker_enabled setting off by default, only while on shift, md5 dedupe) + vehicles tracker columns + admin_set_vehicle_tracker
+  - rate_limits table + _rate_limit; wrappers on create_request and driver_report_location; check_rate_limit('po_extract'|'geocode')
+  - _move_requests_forward + handle_unfit_request (D1); move_stops_forward now uses the same core
+  - deletes max_route_hours (the shift_minutes admin setting is the single day-length limit)
+  App:
+  - lib/freshness.ts states on the map + dashboard
+  - /api/tracker/bouncie webhook (BOUNCIE_WEBHOOK_KEY; /api/tracker/ is public in proxy)
+  - Admin tracker box
+  - driver delivery name (pre-filled) + camera opens on Confirm, then auto-finishes; app-layer photo check removed (the DB enforces it)
+  - lib/day-fit.ts after create (uses the autoOptimize plan; AutoResult now carries the plan)
+  - request Timeline; "route full" banner
+  85 tests pass, tsc/eslint/build OK.
+  ⚠️ This app code needs 0013 LIVE first, or PO reading breaks (check_rate_limit is missing). Not browser-tested yet; that needs 0013 live (no local Supabase).
+  Next: user says "push it" → push 0013 → merge to master → Playwright click-through. Deploy + Sentry are still waiting on GitHub/Vercel accounts.
+- 2026-11-17 ~3:40 PM: user said "push" → migration 0013 pushed LIVE and verified (8 new functions; max_route_hours removed; tracker_enabled=false). Master = 35db607 (includes fix: the GPS-status RPC was never sent because Supabase builders are lazy → added .then; GPS shows "off" as soon as the phone reports it blocked). User approved restarting the 3010 server; it is running the new build.
+  Hidden-browser test PASSED:
+  - webhook 401 without key
+  - employee submit after 3 PM → Wed 11/18 + Timeline OK (AVW-261117-002 E2E leftover)
+  - delivery: name pre-filled ("Receiving"), Confirm opens the camera, photo → auto-saved (Kankakee AVW-261111-008 delivered, proof 1 photo)
+  - GPS blocked → dashboard and map "GPS off" + dispatch alert; allowed again → status ok
+  Not live-tested (covered by DB tests): day-full move/flag (Wed route not full), rate limits, tracker ingest.
+
+**END OF SESSION 2026-11-17 — where we stopped**
+- All code committed: master = 35db607, and branch work/next-fixes is the same. Local git only (no GitHub yet). Live DB has migrations 0001–0013.
+- Test leftovers waiting for a "tidy it":
+  - Kenny-TEST still on shift
+  - AVW-261117-001 (on the 11/17 route)
+  - AVW-261117-002 (on the Wed 11/18 route)
+  - demo Kankakee delivery marked done
+- Next, in order (each needs approval per [[av-waldo-2-brief]]):
+  1. Deploy to Vercel + Sentry. Needs Ashe's GitHub/Vercel sign-in. Set env vars there: Supabase, Google, Anthropic, BOUNCIE_WEBHOOK_KEY. Update Supabase site_url and redirects.
+  2. Bouncie: Ashe checks price + business-use terms, then buys. After that: IMEI in Admin → Settings, and register the webhook at /api/tracker/bouncie with the key.
+  3. Phase 2: Command Center, live ETAs (fill stops.planned_eta), proactive exceptions (cron + severity), employee arrival window.
+- Daily 5 PM pickup email is still PARKED ([[todo-daily-pickup-report]]).

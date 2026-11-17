@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: e179bb69-cc7f-49bd-a802-61955889df0b
-  modified: 2026-10-29T13:03:22.155Z
+  modified: 2026-11-17T21:13:59.587Z
 ---
 
 Site upgrade (hero, projects first, phish mini-game, palette, WebP, self-hosted font) went live on 2026-10-29: `site-upgrade` was fast-forwarded into main at d2f8f24. Previous production commit for rollback is e9de557.
@@ -14,6 +14,8 @@ Decisions from Ashe:
 - Never call them "IT Manager" on the site; the title is "IT Professional & AI Engineer".
 - Keep the "15+ apps & tools built" stat even though the work-tools section was removed.
 - No employer section on the site ("remove what i build at work").
+
+Later commits (all pushed, main = origin/main as of 2026-11-17): 4337150 security skills (2026-10-30); 2026-11-12: 8cf2e9a KOINORIX project page (CRM + help desk SaaS), 1001bca KOINORIX featured first + Spot the Phish moved to the end, 87121a0 removed the demo note from the Projects intro.
 
 Open to-dos (waiting on Ashe): a real photo, Credly/Microsoft Learn links for the cert Verify buttons, and whether to add a short privacy note (the site uses cookieless Vercel Analytics).
 

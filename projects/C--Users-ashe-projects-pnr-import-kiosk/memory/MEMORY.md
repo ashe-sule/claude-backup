@@ -1,3 +1,4 @@
-- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-16)
+- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-17)
 - [JB/QB export](jb-qb-export-email.md) — kiosk download button live; email dropped 2026-11-10
 - [Kiosk users + history](kiosk-users-history.md) — per-user codes, Neon history, weather greeting (2026-11-10)
+- [HubSpot company hierarchy](hubspot-company-hierarchy.md) — sandbox parent/child demo, Company Family field + view; next: workflow, then prod (2026-11-17)
