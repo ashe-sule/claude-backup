@@ -125,3 +125,5 @@ AV-WALDO = AVW Equipment internal dispatch/GPS/pickup-delivery app (driver: Kenn
   2. Bouncie: Ashe checks price + business-use terms, then buys. After that: IMEI in Admin → Settings, and register the webhook at /api/tracker/bouncie with the key.
   3. Phase 2: Command Center, live ETAs (fill stops.planned_eta), proactive exceptions (cron + severity), employee arrival window.
 - Daily 5 PM pickup email is still PARKED ([[todo-daily-pickup-report]]).
+
+**2026-11-18:** User demoing to their boss. Server was down; restarted the prod build (master 35db607, built 11/17) with `next start -p 3010` from the main folder (background) and opened http://localhost:3010/login. Don't write live DB test data until the user says the demo is done. Test leftovers are still in place.
