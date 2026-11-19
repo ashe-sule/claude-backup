@@ -127,3 +127,5 @@ AV-WALDO = AVW Equipment internal dispatch/GPS/pickup-delivery app (driver: Kenn
 - Daily 5 PM pickup email is still PARKED ([[todo-daily-pickup-report]]).
 
 **2026-11-18:** User demoing to their boss. Server was down; restarted the prod build (master 35db607, built 11/17) with `next start -p 3010` from the main folder (background) and opened http://localhost:3010/login. Don't write live DB test data until the user says the demo is done. Test leftovers are still in place.
+
+**2026-11-19:** Demo feedback build done → see [[demo-feedback-2026-11-19]]. Commit c2d0044 on work/next-fixes (not merged, not live). Waiting for "push it" + emails for Mike/Kenny/Dane/Milutin.

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 794fb6ff-57e3-48fa-83a5-6bc10d3695a1
-  modified: 2026-11-18T22:40:24.272Z
+  modified: 2026-11-19T14:26:52.112Z
 ---
 
 CORYNEXA = AI-powered multi-tenant SaaS ERP, a NexuCentri product (Ashe's own track, separate from AVW work).
@@ -30,6 +30,7 @@ Ashe said "keep building your part, accounts later". Pending Ashe: Supabase acco
 **PR #3 (2026-11-18)** https://github.com/ashe-sule/corynexa/pull/3, branch m2/general-ledger, stacked on #2, CI GREEN. Migration 20261119000001_general_ledger.sql: accounts (33-acct default CoA seeded by trigger on companies insert), fiscal_periods (monthly, open/soft_closed/closed, overlap trigger), journal_entries/lines (immutable, composite FKs, deferred balance constraint trigger), private.post_entry engine + public post_journal / reverse_journal / set_period_status / create_fiscal_year / trial_balance. 33 ledger tests (61 DB total). Finance UI under src/app/app/finance (journals, new journal w/ idempotency key, detail+reverse, accounts, reports TB/P&L/BS, periods). Money helpers in src/lib/money.ts (bigint units), summarize in src/lib/finance-shared.ts. NOT yet verified against a real Supabase (PostgREST embeds etc.).
 **Independent security review (subagent, 2026-11-19):** no critical issues; 1 high, 2 medium and 6 low, ALL fixed in **PR #4** https://github.com/ashe-sule/corynexa/pull/4 (branch m2/security-hardening, stacked on #3, CI GREEN). Migration 20261119000002_security_hardening.sql: advisory lock on idempotency, soft-close reopen = owner/admin, last-owner guard locks + allows user deletion, global default-privilege revoke, INVITATIONS replace direct member inserts (invite_member/accept_invitation/delete_invitation/my_invitations). Harness mirrors Supabase default grants; security.test.ts privilege sweep has an allow-list of authenticated RPCs (update it when adding RPCs!). App: site-url.ts (no Host header), reversal date picker, /app/team page, invites on dashboard. 76 DB + 53 unit tests. docs/SETUP.md = go-live checklist.
 STOPPED HERE to ask Ashe (2026-11-19): merge PRs #1→#4 (in order, or allow the gh merge permission), then Supabase account + project so everything can be tested end to end before building AR/AP.
+**Session closed 2026-11-19 by Ashe ("will continue later").** Checked via gh: PRs #1–#4 are all still OPEN. Ashe has the ask list: (1) merge #1→#4, (2) create Supabase corynexa-dev and share the URL + publishable key, plus optional gh workflow scope refresh and the AI v0 decision. On resume, check the PR state first, then go to docs/SETUP.md step 2 (db push) if Supabase is ready.
 Ashe's instruction (2026-11-18): "keep working, do all you don't need me for, only contact me when you need me".
 (old) NEXT for Claude: step 4 auth screens (sign-up/in/reset/invite via server actions), step 7 app shell (sidebar, company switcher, create company).
 

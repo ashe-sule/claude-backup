@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: a3e2afcd-3079-4507-a047-3137d7945d77
-  modified: 2026-11-09T18:44:50.605Z
+  modified: 2026-11-19T22:42:22.517Z
 ---
 
 **Status at 2026-11-09 (end of session)**
@@ -32,3 +32,19 @@ metadata:
 
 **Why:** Ashe works across many chats, and the previous session left no notes.
 **How to apply:** start from this list, and confirm with Ashe before acting (their rule: no task without approval).
+
+**2026-11-19 — Excel export totals blank: FIXED, committed fe1743a, deployed to prod**
+- Deployed with `vercel deploy --prod` (deployment avw-electrical-schedule-v2-mwznhlg4z): status Ready, site + /api/health return 200. Vercel CLI IS installed (npm global).
+- The commit is NOT pushed to GitHub yet (ask first). A live export test from the app UI is still to do: Ashe to export a real project and check the totals.
+- Problem: the TOTALS row and VOLTAGE DISTRIBUTION "TOTAL AMPS" were blank in the export. openpyxl saved the formulas with no stored result, so Protected View, previews and phones showed blanks.
+- Fix in processor.py:
+  - Keep the formulas, so totals stay live when editing, AND store each result in the xlsx (`_store_formula_results`).
+  - Write number-looking text in HP/Volts/Amps/Gal Min as real numbers.
+  - The voltage SUMIF now adds up every way a voltage is written (460, "460V").
+  - build_summary now falls back from Ext. Amps to Amps.
+- Tested:
+  - test_engine_regression.py passes, including a new mixed-format check.
+  - Opened in real Excel: the stored totals match Excel's own recalculation.
+  - 3 pytest failures already existed: the sample PDF ../upload/EQ-1-1142.pdf is missing.
+- Test env: temp venv at %TEMP%/claude/avw-venv. There's no project venv.
+- Next: push the branch, if Ashe approves.
