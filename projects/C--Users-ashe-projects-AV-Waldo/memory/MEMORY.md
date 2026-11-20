@@ -5,5 +5,5 @@
 - [Driver view = simple](driver-view-simple.md) — drivers not tech-savvy; keep driver screen minimal, push work to system/dispatch
 - [Same-day dispatch](same-day-dispatch.md) — no queue: submit → auto-added to Kenny's route today (late → next workday), auto-publish
 - [TODO daily pickup report](todo-daily-pickup-report.md) — PARKED: 5 PM pickups-only email; email method + recipients TBD
-- [Demo feedback 11/19](demo-feedback-2026-11-19.md) — boss's 8 asks (partial pickup, future deliveries, lunch punch, speeding, Buddy Bear, Dane/Milutin view); BUILT c2d0044 + road speed limits 8dff313 (not live), awaiting "push it"
+- [Demo feedback 11/19](demo-feedback-2026-11-19.md) — boss's 8 asks (partial pickup, future deliveries, lunch punch, speeding, Buddy Bear, Dane/Milutin view); BUILT c2d0044 + road speed limits 8dff313 — LIVE 2026-11-20; test data cleaned, 3 bugs fixed (0017)
 - [AV-WALDO 2.0 brief](av-waldo-2-brief.md) — strict approval rules + 4-phase tracking roadmap; proposal given 2026-11-17, awaiting approval

@@ -1,4 +1,6 @@
-- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-19: prod category dropdowns + tiles; recheck HubSpot search)
+- [Project status](project-status.md) — READ FIRST: what is live, tested, and next (2026-11-20: audit done read-only; Ashe to pick from first 5)
+- [HubSpot audit](hubspot-audit.md) — Part 1 read-only audit 2026-11-20 (Excel, 16 tabs): findings, gaps, first-5 awaiting OK
+- [Prod access key](prod-access-key.md) — prod key is in .env.prod-readonly (can write!); check before saying "no access"
 - [JB/QB export](jb-qb-export-email.md) — kiosk download button live; email dropped 2026-11-10
 - [Kiosk users + history](kiosk-users-history.md) — per-user codes, Neon history, weather greeting (2026-11-10)
 - [HubSpot company hierarchy](hubspot-company-hierarchy.md) — sandbox parent/child demo, Company Family field + view; next: workflow, then prod (2026-11-17)

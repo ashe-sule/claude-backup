@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 3930e332-a4c8-4d2f-8ed7-a3cdeefae796
-  modified: 2026-11-19T22:37:30.677Z
+  modified: 2026-11-20T19:14:59.080Z
 ---
 
 As of 2026-11-10 (end of session), everything is committed and pushed; working tree clean; last commit 5592149 (brief update).
@@ -50,5 +50,12 @@ Next: Ashe clicks Download on live Export to confirm; dependent-property rules f
 2026-11-19 PROD tiles (Ashe's OK, done in Chrome, Record Customization → Tickets → Default view; prod also has "Engineering View" for Engineering team): card `engineering` (254189405, used in 1 view) + Part Number Category; card `accounting` (254237209, used in 2 views) + Item Discount Category; card `purchasing` (254239525, used in 2 views) + Purchase Description. All saved ("Your changes were saved"), re-opened to confirm. Seen live on tickets 45998682228 + 51491736641 (Purchasing tile shows Purchase Description); Engineering/Accounting tiles are stage-conditional so not visible on those. Left alone: `engineering-cpn-makenotforsale` card, second "Accounting" card (New property list card 02/09/2025). Ticket search index lagged right after the type change (HAS_PROPERTY returned 0) — recheck later. NEXT ideas: check search/reports show values again; fix 16 bad values only if Ashe asks; Item Discount Category on form still no BELT.
 
 2026-11-19 END OF SESSION: Search recheck at end still 0 for both fields → FIRST THING next session: rerun HAS_PROPERTY search on prod; if still 0, propose re-saving the same values (prod write, ask). Brief (CLAUDE.md) updated + committed locally bc5e704, NOT pushed (push = deploy; run tsc + next build first). Kiosk code unchanged. avwforms local clone left on branch fix/npr-category-101 (== origin/main 1f2ccd6) with node_modules installed. Backup of old prod values + old field definitions: memory folder prod-category-backup-2026-11-19.json.
+
+2026-11-20 FINDING (read-only, during HubSpot audit): ALL 49 kiosk-created PROD tickets ("NPR/CEP - EXCEL - …") are DELETED (archived): 2 on 2026-11-02, 47 in one batch 2026-11-03 16:06 UTC. 0 EXCEL tickets live in PNR. Who deleted is unknown (needs HubSpot audit log in UI). Restorable from recycle bin ~90 days (until ~2027-02-01) — restoring = prod write, needs Ashe's OK. Kiosk History (Neon) only has exports from 2026-11-10, no import rows. Prod audit key scopes verified 2026-11-20: NO automation, owners, deals, teams, lists; YES tickets, companies, contacts, custom objects, forms, files, settings users (read).
+
+2026-11-20 END OF SESSION: Kiosk code unchanged (last commit bc5e704, still NOT pushed). Session work was read-only on prod:
+- Parent/child companies Excel: C:\Users\ashe\Documents\HubSpot Parent-Child Companies 2026-11-20.xlsx
+- HubSpot audit Part 1, in Excel (16 tabs) + .md: C:\Users\ashe\Documents\AVW HubSpot Audit - Part 1 - 2026-11-20.xlsx. Details in [[hubspot-audit]].
+NO prod changes made. NEXT: Ashe picks which of the first 5 audit changes to start (tab 2, "Your decision" column). Ashe was offered a Word version for management; no answer yet. The 2026-11-19 category search recheck is still open.
 
 2026-11-17 (new session): Ashe asked if any PROD automations use RGA Pipeline (tickets, id 668428939) stage "Accepted By AVW" (id 980913723). Found pipeline + stage read-only via .env.prod-readonly, but that key LACKS `automation` scope → /automation/v4/flows = 403. Answer still open: need automation read scope on the prod-readonly app, or a view-only Chrome look at HubSpot Workflows (filter by ticket pipeline stage).

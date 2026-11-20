@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ccea4d1f-d510-4a55-8b67-2ee326d0bd9d
-  modified: 2026-11-17T17:30:30.037Z
+  modified: 2026-11-20T16:43:12.348Z
 ---
 
 Side project (not kiosk code): Ashe wants a clean way to see parent/child companies in HubSpot. All work so far is SANDBOX only (portal 50557468). Nothing in prod.
@@ -27,5 +27,7 @@ Side project (not kiosk code): Ashe wants a clean way to see parent/child compan
 1. Build workflow to auto-fill Company Family when a company gets a parent (check HubSpot plan supports copying from associated company first; multi-level parents not handled by a simple copy).
 2. If Ashe likes it → replicate in PROD only with explicit OK (property + backfill + view).
 3. Delete the 3 TEST companies when Ashe says.
+
+**2026-11-20 PROD read-only report (Ashe said "go")**: prod key (.env.prod-readonly) CAN read companies. 8,170 companies; 94 parents, 1,889 children (5 are middle level = child AND parent), 6,192 standalone. Biggest: Tommy Car Wash Systems 949, AWS SimpleWash 146, AVW Tommy International 60, Silver CWES 59. 27 parents have only 1 child. Rollup counts all matched the real links (unlike sandbox, prod links are clean). Excel saved: C:\Users\ashe\Documents\HubSpot Parent-Child Companies 2026-11-20.xlsx (tabs Summary + Parents & Children). Scripts: session scratchpad family/fetch.mjs + build.mjs (temp). No prod writes.
 
 Related: [[project-status]]

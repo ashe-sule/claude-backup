@@ -15,3 +15,8 @@ As of 2026-11-11 end of session, waiting on the user for:
 8. Real staff list (names/emails/roles) incl. Kenny.
 Later: delete Supabase access token (30-day), Supabase Pro + restore test. (JobBOSS/QuickBooks integration DROPPED by Ashe 2026-11-17.)
 9. Daily pickup report email: choose email method (M365 Graph recommended vs Resend) + how recipients are managed. See todo-daily-pickup-report.md
+10. (2026-11-20) Work emails for Mike (admin), Kenny (driver), Dane + Milutin (manager, view-only), so I can create real logins. Emails = login username + sign-in/reset links; work email preferred; Kenny's must be checkable on his phone. Explained to Ashe 2026-11-20.
+11. (2026-11-20) Retire the demo vehicle "Company Truck 1" (DEMO-1)? I offered; no answer yet.
+12. (2026-11-20) Order the 2 vehicle phones (Tahoe + Truck) + GPS device.
+13. (2026-11-20) The Supabase access token in .env.local is INVALID (401). Either a new token, or keep using the dashboard SQL Editor for live SQL. `supabase login` can't run in the ! prompt (non-TTY).
+14. (2026-11-20) Road speed limits: the free OSM/Overpass servers were flaky. If alerts need to be reliable → HERE/TomTom key + spending cap.
