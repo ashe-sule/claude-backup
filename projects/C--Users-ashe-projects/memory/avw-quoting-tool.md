@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 19421e3c-39eb-4cfd-b43b-9a62024636ca
-  modified: 2026-11-18T22:03:18.050Z
+  modified: 2026-11-23T16:40:54.219Z
 ---
 
 # AVW Quoting Tool → QuickBooks "Approve & Send" — PROJECT STATUS (updated 2026-11-18, end of session)
@@ -33,6 +33,16 @@ metadata:
 
 ## Incident (2026-11-18)
 - Ashe's test quote "Test-Kaady" #26915 (~$279k) was wiped to "Untitled Quote $0" in live Supabase right after Claude (Chrome) clicked Open then jumped to /review ~3s later. Likely ConfiguratorShell.tsx save-on-leave/autosave saved unloaded state. Pre-existing app risk → **tell Joseph** (not fixed; outside QB scope unless Ashe asks). Ashe said "that's ok".
+
+## Side task (2026-11-23, DONE): PPT Tunnel Layout part-number export
+- DONE: `Downloads/PPT Tunnel Layout Existing List - UPDATED.xlsx`. Rows 1-138 are unchanged, row 140 is "UPDATED PARTS" (bold, yellow), and the FINAL file has 161 new part numbers in col B rows 141-301 (configurator option values + 24 generated blower BL0522D* combos). 80 bundle sub-parts were added, then REMOVED at Ashe's request ("don't need the sub parts"). Ashe closed the session happy.
+- OPEN: SUPABASE_SERVICE_ROLE_KEY is STILL in quoting tool .env.local. Ask Ashe next session whether to remove it or rotate it. Verified: no duplicates, no overlap with the original.
+- Not exported (no part number in the tool): Purclean 15,000/6,000 RO, 400-gal Purclean/WTC reject tanks.
+- Ashe added SUPABASE_SERVICE_ROLE_KEY to quoting tool .env.local (2026-11-23). Read-only use. Suggested removing or rotating it afterwards.
+- Original notes below:
+- Ashe wants every part number in the configurator from `presoak` (Equipment tab) through the end of the Backroom tab (order: lib/quote/quoteOrder.ts) that's NOT already in `Downloads/PPT Tunnel Layout Existing List.xlsx` (sheet "Tunnel Equipment", col B "Part Number", 137 rows).
+- Output: a NEW copy named "...Existing List - UPDATED.xlsx". Add a divider row "UPDATED PARTS", put the new part numbers under it. Part number only: no description, other columns left blank.
+- Blocker: catalog RLS = authenticated only. Public key returns 0 rows. .env.local has no SUPABASE_SERVICE_ROLE_KEY. The app has no catalog page (only inside the quote editor, which is the incident risk). Asked Ashe to add the service key to .env.local themselves.
 
 ## NEXT (in order)
 1. Test discount path (10% for Kaady should be HELD; customer type allows 40% = ES04).

@@ -11,4 +11,4 @@
 - [AVW Marketing Workspace](avw-marketing-workspace.md) — rebuild of marketing team's ChatGPT tracker; Studio redesign approved + built on git branch studio-redesign 2026-11-17, local only, not deployed
 - [CORYNEXA](corynexa.md) — ERP product by NexuCentri (ASHE track); scoping stage 2026-11-18, no code
 - [Market Research](market-research.md) — folder created 2026-11-12 at projects/Market Research; empty, scope TBD
-- [AVW Quoting Tool](avw-quoting-tool.md) — QuickBooks Approve & Send on branch `quickbook`: works in ICA (Est #36516), local commits only, never merge w/o Ashe OK; NEXT list inside (2026-11-18)
+- [AVW Quoting Tool](avw-quoting-tool.md) — QuickBooks Approve & Send on branch `quickbook`: works in ICA (Est #36516), local commits only, never merge w/o Ashe OK; NEXT list inside (2026-11-18); PPT parts export done 2026-11-23, service key still in .env.local
