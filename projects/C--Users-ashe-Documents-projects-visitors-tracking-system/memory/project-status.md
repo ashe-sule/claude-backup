@@ -14,3 +14,5 @@ metadata:
 **How to apply:** Any new date display must pass timeZone 'America/Chicago'.
 
 Still open: /admin/monthly page + AdminShell nav link uncommitted/untested; tablet 1.0.2 printer check; PIN 1234; device-owner lock-down.
+
+**2026-11-24 (new PC):** Project moved to C:\Users\ashe\Documents\projects. npm install OK. Lock-file-only commit 07edcc3 on main (kiosk-app/package-lock.json) (npm metadata sync, no version changes) — LOCAL ONLY, not pushed.

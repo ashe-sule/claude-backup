@@ -48,3 +48,5 @@ metadata:
 **DEPLOYED ashesule.com (2026-11-12, owner said "deploy"):** owner asked KOINORIX card FIRST and Spot the Phish card + mini-game LAST. ashe-portfolio commit 1001bca pushed with 8cf2e9a → Vercel Production success (GitHub status). Local preview checked order + no overflow (desktop/phone). This PC can't reach ashesule.com directly (TLS reset), so live check was via GitHub deploy status only — owner should eyeball the site. KOINORIX repo itself still unpushed (no request). Next: owner's call (pre-launch items: S3/R2 + virus scan, email provider, business hours/SLA reports, deal/ticket import).
 
 **2026-11-12:** projects intro on ashesule.com changed to "A few products I have designed, built and tested end to end." (demo note removed) — commit 87121a0 pushed, Vercel success.
+
+**2026-11-24 (new PC):** Project moved to C:\Users\ashe\Documents\projects. npm install OK. Lock-file-only commit 24b9aa9 on main (npm metadata sync, no version changes) — LOCAL ONLY, not pushed.
