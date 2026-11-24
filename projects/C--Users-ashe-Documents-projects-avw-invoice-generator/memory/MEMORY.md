@@ -1,0 +1,2 @@
+- [Vercel deploy setup](vercel-deploy-setup.md) — git-connected 2026-10-30; push to main = live, ask first
+- [Invoice pending improvements](invoice-pending-improvements.md) — deferred to-dos from 2026-10-30 review

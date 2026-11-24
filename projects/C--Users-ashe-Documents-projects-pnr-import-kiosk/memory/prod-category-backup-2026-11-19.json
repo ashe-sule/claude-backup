@@ -1,0 +1,1565 @@
+{
+ "part_number_category": {
+  "def": {
+   "updatedAt": "2026-04-11T17:19:24.528Z",
+   "createdAt": "2026-04-11T17:16:13.252Z",
+   "name": "part_number_category",
+   "label": "Part Number Category",
+   "type": "string",
+   "fieldType": "text",
+   "description": "",
+   "groupName": "ticketinformation",
+   "options": [],
+   "createdUserId": "74761376",
+   "displayOrder": -1,
+   "calculated": false,
+   "externalOptions": false,
+   "archived": false,
+   "hasUniqueValue": false,
+   "hidden": false,
+   "modificationMetadata": {
+    "archivable": true,
+    "readOnlyDefinition": false,
+    "readOnlyValue": false
+   },
+   "formField": true,
+   "dataSensitivity": "non_sensitive"
+  },
+  "rows": [
+   {
+    "id": "44466412442",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "44466439496",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "44474920571",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "44494237319",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "44465201017",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "44480342894",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "44602933311",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "44675856648",
+    "v": "SUPPRECLM"
+   },
+   {
+    "id": "44874798505",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "44888891195",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "44902245135",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "44972786970",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "44972787062",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45013235821",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "44982267045",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45050009886",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "45062782041",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "45048462151",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "45132118833",
+    "v": "mat"
+   },
+   {
+    "id": "45120198563",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "45120199799",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45120353910",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45129022512",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45128713601",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45139859842",
+    "v": "BRSHSPCIAL"
+   },
+   {
+    "id": "45132986649",
+    "v": "SUPPHYDPWR"
+   },
+   {
+    "id": "45117361748",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "45128831392",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "45140130419",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "45129766803",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45148350063",
+    "v": "PWRBELTDRV"
+   },
+   {
+    "id": "45182654554",
+    "v": "WRPMTRCMBO"
+   },
+   {
+    "id": "45177332003",
+    "v": "EQUIPMENT"
+   },
+   {
+    "id": "45215353520",
+    "v": "FNMOD"
+   },
+   {
+    "id": "45237612153",
+    "v": "BRSHWRAP"
+   },
+   {
+    "id": "45236221364",
+    "v": "BRSHWRAP"
+   },
+   {
+    "id": "45252847737",
+    "v": "BRSHCNTR"
+   },
+   {
+    "id": "45261506376",
+    "v": "BRSHRCKR"
+   },
+   {
+    "id": "45253827503",
+    "v": "BRSHRCKR"
+   },
+   {
+    "id": "45280205732",
+    "v": "OTHER CHARGES"
+   },
+   {
+    "id": "45289417794",
+    "v": "OTHER CHARGES"
+   },
+   {
+    "id": "45289417809",
+    "v": "CNTRLLR"
+   },
+   {
+    "id": "45271897380",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "45294628780",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45291520319",
+    "v": "MOTORSELEC"
+   },
+   {
+    "id": "45320363147",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "45294200111",
+    "v": "VACCENTRAL"
+   },
+   {
+    "id": "45279673757",
+    "v": "VACCENTRAL"
+   },
+   {
+    "id": "45284344600",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45268549949",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "45345235618",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "45382702439",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45462045035",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "45465854316",
+    "v": "SUPPPMPSTD"
+   },
+   {
+    "id": "45519801988",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45548773445",
+    "v": "FSTNRNUTS"
+   },
+   {
+    "id": "45622293022",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45544585780",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45620027577",
+    "v": "DTLCNVYRS"
+   },
+   {
+    "id": "45570116409",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "45632835727",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "45639126448",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45637839713",
+    "v": "DTLCNVYRS"
+   },
+   {
+    "id": "45664008021",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45673634586",
+    "v": "SUPPHYDPWR"
+   },
+   {
+    "id": "45683871112",
+    "v": "PARTS-M"
+   },
+   {
+    "id": "45677112490",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45673550893",
+    "v": "MOTORSELEC"
+   },
+   {
+    "id": "45682877311",
+    "v": "MOTORSELEC"
+   },
+   {
+    "id": "45681640090",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45675958134",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45669487460",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "45668562180",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "45681528904",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "45705628723",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "45705162794",
+    "v": "BRSHRCKR"
+   },
+   {
+    "id": "45725196354",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "45725197099",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "45725237668",
+    "v": "MATLS-ALUM"
+   },
+   {
+    "id": "45712998760",
+    "v": "WRAP AROUND MOTOR MOUNT ASSEMBLY"
+   },
+   {
+    "id": "45721886049",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45721424131",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "45754641240",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "45752328485",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45748897095",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45744759624",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "45736289110",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45753292593",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45757869216",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "45737117186",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45740665750",
+    "v": "WRAPS"
+   },
+   {
+    "id": "45764350485",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "45782214048",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "45763445830",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "45857153911",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "45934898005",
+    "v": "VLVSSOLND"
+   },
+   {
+    "id": "45954319960",
+    "v": "FSTNRSCRWS"
+   },
+   {
+    "id": "45998682228",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "46003075117",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "45998219631",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "46090457731",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "46074721108",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "46076888984",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "46094062686",
+    "v": "FSTNRUBOLT"
+   },
+   {
+    "id": "46121361727",
+    "v": "WRPMTRSIDE"
+   },
+   {
+    "id": "46115597069",
+    "v": "FTTNSHYD"
+   },
+   {
+    "id": "46174542916",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46168913247",
+    "v": "FTTNSPLSTC"
+   },
+   {
+    "id": "46238329222",
+    "v": "DRYRBLWERS"
+   },
+   {
+    "id": "46238795274",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46241440262",
+    "v": "EQUIPMENT"
+   },
+   {
+    "id": "46448762503",
+    "v": "WRAPS"
+   },
+   {
+    "id": "46588187928",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "46580496669",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "46587106366",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "46595013039",
+    "v": "FNMOD"
+   },
+   {
+    "id": "46583701040",
+    "v": "FNMOD"
+   },
+   {
+    "id": "46580346211",
+    "v": "SUPPCMPRSS"
+   },
+   {
+    "id": "46701585220",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "46682280628",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "46700419339",
+    "v": "EQUIPMENT"
+   },
+   {
+    "id": "46700540075",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "46716752239",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "46673680981",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46681487511",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46685561507",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46671664804",
+    "v": "TOPBRUSH"
+   },
+   {
+    "id": "46666895256",
+    "v": "FSTNRUBOLT"
+   },
+   {
+    "id": "46701654592",
+    "v": "DRYRBLWERS"
+   },
+   {
+    "id": "46699988864",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46665069884",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46734118316",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46734146734",
+    "v": "FIXSIGNS"
+   },
+   {
+    "id": "46776286875",
+    "v": "FSTNR"
+   },
+   {
+    "id": "46758541237",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "46767950744",
+    "v": "PRSSRBLST"
+   },
+   {
+    "id": "46797951297",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "46824409462",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "46824255076",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "46894572640",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47094589875",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47095828812",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47113971602",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47120013397",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47105901159",
+    "v": "PRSSRBLST"
+   },
+   {
+    "id": "47121585960",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "47276730716",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "47289498445",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "47322972711",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47363257502",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "47349146119",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "47400394028",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "47384730775",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "47391091100",
+    "v": "WRPMTRCMBO"
+   },
+   {
+    "id": "47418571192",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47434243854",
+    "v": "FTTNSPLUMB"
+   },
+   {
+    "id": "47445084172",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "47463433900",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47461532509",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47454285856",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47459520807",
+    "v": "SUPPCMPRSS"
+   },
+   {
+    "id": "47489449042",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "47488224594",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "47557028196",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47528394781",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47537722037",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47569854546",
+    "v": "SUPPPMPSTD"
+   },
+   {
+    "id": "47562447365",
+    "v": "APPLICATOR"
+   },
+   {
+    "id": "47564768283",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "47582247763",
+    "v": "WRPSIDECBO"
+   },
+   {
+    "id": "47559855944",
+    "v": "SIDEWASHER"
+   },
+   {
+    "id": "47559543182",
+    "v": "WRAPS"
+   },
+   {
+    "id": "47569884681",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "47568642904",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "47566321225",
+    "v": "APPLARCH"
+   },
+   {
+    "id": "47646245959",
+    "v": "BRSHRCKR"
+   },
+   {
+    "id": "47631596361",
+    "v": "FSTNRUBOLT"
+   },
+   {
+    "id": "47634082067",
+    "v": "WRAPS"
+   },
+   {
+    "id": "47685230222",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "47693561212",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47677333120",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "47672535094",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47678561563",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47713603345",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47730852272",
+    "v": "PUMPWATER"
+   },
+   {
+    "id": "47747257460",
+    "v": "BRSHMTR"
+   },
+   {
+    "id": "47753958955",
+    "v": "PWRGRMTRS"
+   },
+   {
+    "id": "47757378131",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47808693861",
+    "v": "SUPPPREPGN"
+   },
+   {
+    "id": "47803451804",
+    "v": "SUPPPMPSTD"
+   },
+   {
+    "id": "47818564451",
+    "v": "SUPPPMPSTD"
+   },
+   {
+    "id": "47849707087",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47825333605",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "47843625566",
+    "v": "WRAPS"
+   },
+   {
+    "id": "47848525241",
+    "v": "parts-b"
+   },
+   {
+    "id": "47844265592",
+    "v": "BRSHWRAP"
+   },
+   {
+    "id": "47855201403",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47838636643",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47836596513",
+    "v": "BRSHWRAP"
+   },
+   {
+    "id": "47846856109",
+    "v": "FNMOD"
+   },
+   {
+    "id": "47848559670",
+    "v": "FNMOD"
+   },
+   {
+    "id": "47854508359",
+    "v": "BRSHMTR"
+   },
+   {
+    "id": "47832294577",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "47886444036",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "47905771937",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "47911111215",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "47958348816",
+    "v": "SUPPCMPRSS"
+   },
+   {
+    "id": "47977530179",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47978612775",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "47950297957",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "47961771118",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "47955739153",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "47950477072",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "47969642617",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "47974507578",
+    "v": "DTLCNVYRS"
+   },
+   {
+    "id": "48020596503",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48018218881",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48013881748",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48024549447",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48032203801",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48043251573",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48026407337",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48023695703",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48030666390",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48016670271",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48047279401",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48037624703",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48055560779",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48069350834",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48064086964",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48057419159",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48049602592",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48049602657",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48062693817",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48042583461",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48062849118",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48060516615",
+    "v": "MATLS-SSTL"
+   },
+   {
+    "id": "48113260827",
+    "v": "PWRGRMTRS"
+   },
+   {
+    "id": "48100765984",
+    "v": "BRSHVAN"
+   },
+   {
+    "id": "48096034112",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48088328849",
+    "v": "DTLCNVYRS"
+   },
+   {
+    "id": "48107456039",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48130290073",
+    "v": "FNMOD"
+   },
+   {
+    "id": "48188428587",
+    "v": "WRPMTRCMBO"
+   },
+   {
+    "id": "48204907147",
+    "v": "FIXENTREXT"
+   },
+   {
+    "id": "48179571285",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "48199218499",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "48371733665",
+    "v": "BRSHCNTR"
+   },
+   {
+    "id": "48369221449",
+    "v": "BRSHCNTR"
+   },
+   {
+    "id": "48360600892",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "48398199330",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "48456793513",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48458039712",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48462998397",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48462069403",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48444481309",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48465842266",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48466616372",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48440563530",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48435667340",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48448195369",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48448351010",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48461616984",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48525679728",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48548954908",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48539130240",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48549574067",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48541453061",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48536132003",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48521896570",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48550038910",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48530945347",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48540833932",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48561563400",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48563266666",
+    "v": "MATLS-STL"
+   },
+   {
+    "id": "48572685482",
+    "v": "M"
+   },
+   {
+    "id": "48558621348",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48587036256",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48560983129",
+    "v": "BRSHWRAP"
+   },
+   {
+    "id": "48554475855",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48625344620",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48616126263",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "48621285221",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "48631649304",
+    "v": "hof"
+   },
+   {
+    "id": "48608409437",
+    "v": "hof"
+   },
+   {
+    "id": "48630876333",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "48623864884",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48617944897",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "48613293961",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "48631036971",
+    "v": "SUPPPANELS"
+   },
+   {
+    "id": "48674621769",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "48679579453",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "48654966811",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "48722598065",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48723836296",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48719343501",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48696809331",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48726018048",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48705482000",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48723082768",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48717039518",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48729910914",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48722168505",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "48807420931",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "48940740275",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48936714351",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48927603566",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48929461767",
+    "v": "CHNCNVYR"
+   },
+   {
+    "id": "48955926615",
+    "v": "TOPWASHERS"
+   },
+   {
+    "id": "49031543945",
+    "v": "FNMOD"
+   },
+   {
+    "id": "49034179959",
+    "v": "FNMOD"
+   },
+   {
+    "id": "49047197857",
+    "v": "MATLS-PLAS"
+   },
+   {
+    "id": "49006187072",
+    "v": "HOSEHHDRLC"
+   },
+   {
+    "id": "49032193883",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49031574835",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49171032455",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "49229598590",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "49235348767",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "49270729229",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "49264477454",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "49307874896",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49294556800",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "49360596494",
+    "v": "FSTNRUBOLT"
+   },
+   {
+    "id": "49339982144",
+    "v": "MOTORSELEC"
+   },
+   {
+    "id": "49498808902",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49626839838",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49645753008",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49626531106",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49648384697",
+    "v": "TIREEQUIP"
+   },
+   {
+    "id": "49761016370",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "49862298920",
+    "v": "MISC"
+   },
+   {
+    "id": "49861578030",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49903729959",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49863756726",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49858638849",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49898146085",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49847799189",
+    "v": "CNTRLLRMCC"
+   },
+   {
+    "id": "49950608978",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "49993939586",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "49965245267",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "49945426609",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "50033730465",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "50020779372",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "50076339307",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "50092238881",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "50364244760",
+    "v": "PWRGRMTRS"
+   },
+   {
+    "id": "50318286251",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "50481699513",
+    "v": "CNVYRBELT"
+   },
+   {
+    "id": "50510043207",
+    "v": "VACARCHES"
+   },
+   {
+    "id": "50613583493",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50511657878",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50512428328",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50483014514",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50618536305",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50471930970",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50817586757",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50870149523",
+    "v": "FSTNRUBOLT"
+   },
+   {
+    "id": "50928510076",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "50938585737",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "50995875731",
+    "v": "VACACCESS"
+   },
+   {
+    "id": "50936012724",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "51095790962",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "51157933706",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "51142934891",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "51149612333",
+    "v": "MFGSPLY"
+   },
+   {
+    "id": "51189046925",
+    "v": "BRSHCNTR"
+   },
+   {
+    "id": "51187047741",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "51277777699",
+    "v": "DRYRARCHES"
+   },
+   {
+    "id": "51344548711",
+    "v": "PRSSRARCH"
+   },
+   {
+    "id": "51494741368",
+    "v": "BRSHMTR"
+   },
+   {
+    "id": "51491736641",
+    "v": "BRSHMTR"
+   },
+   {
+    "id": "51567567185",
+    "v": "BLTCNVYRS"
+   },
+   {
+    "id": "51559279702",
+    "v": "BLTCNVYRS"
+   }
+  ]
+ },
+ "item_discount_category": {
+  "def": {
+   "updatedAt": "2026-04-20T17:03:47.341Z",
+   "createdAt": "2026-04-20T17:03:47.341Z",
+   "name": "item_discount_category",
+   "label": "Item Discount Category",
+   "type": "string",
+   "fieldType": "text",
+   "description": "",
+   "groupName": "ticketinformation",
+   "options": [],
+   "createdUserId": "74761376",
+   "updatedUserId": "74761376",
+   "displayOrder": -1,
+   "calculated": false,
+   "externalOptions": false,
+   "archived": false,
+   "hasUniqueValue": false,
+   "hidden": false,
+   "modificationMetadata": {
+    "archivable": true,
+    "readOnlyDefinition": false,
+    "readOnlyValue": false
+   },
+   "formField": true,
+   "dataSensitivity": "non_sensitive"
+  },
+  "rows": [
+   {
+    "id": "45744759624",
+    "v": "Equip - B"
+   },
+   {
+    "id": "45998682228",
+    "v": "EQUIP - M"
+   },
+   {
+    "id": "46121361727",
+    "v": "EQUIP-M"
+   }
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+- [CloudSpend repo & website](cloudspend-repo-and-website.md) — private repo ashe-sule/cloudspendiq; posted on ashesule.com 2026-10-28 (e9de557)
+- [CloudSpend phase status](cloudspend-phase-status.md) — all 5 phases coded 2026-10-28 (phase-5-production 903ed45); deploy waits on Ashe's accounts
+- [SonicWALL blocks ashesule.com](network-sonicwall-blocks-ashesule.md) — live checks of the site fail from this PC; check on phone data instead
+- [Next project shortlist](next-project-shortlist.md) — 4 ideas offered 2026-10-28, none picked; CloudSpend merge + free demo still open

@@ -1,0 +1,3 @@
+- [Project status](project-status.md) — status 2026-11-20: work in the avw-electrical-schedule-equipmentx folder, deploy = push to equipmentx main (never vercel deploy); open items (Heri amps charts, Novi quote); read on "where did we stop?"
+- [Save chats as we go](save-chats-as-we-go.md) — Ashe wants all chats remembered; update memory during every session
+- [Engineering rule sources](engineering-rule-sources.md) — engineer email Q&A drives rules; sample quote paths; Master xlsx must be edited via Excel

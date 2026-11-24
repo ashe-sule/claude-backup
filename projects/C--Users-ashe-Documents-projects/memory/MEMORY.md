@@ -1,0 +1,14 @@
+- [GitHub buildup plan](github-buildup.md) — ALL repos PRIVATE (2026-10-16); showcase on ashesule.com only; hub at projects/github-buildup
+- [Git identity leak](git-identity-leak.md) — NEVER let git guess/expose the AVW email; useConfigOnly is on; noreply for public repos
+- [Product ideas method](product-ideas-method.md) — brainstorm with a 'what do businesses pay for monthly' sweep, not just named domains
+- [Two tracks: ASHE + AVW](two-tracks-ashe-avw.md) — Ashe's own products to sell vs growing AVW at scale; keep separate, tag every idea
+- [Nexucentri](nexucentri.md) — Ashe's real company; products branded "by NexuCentri" (e.g. Sealed); never a fake/phish domain
+- [Brand voice: professional](brand-voice-professional.md) — taglines/copy formal, not catchy; offer options first
+- [AVW Invoice Generator](avw-invoice-generator.md) — Publisher invoice replacement, live on Vercel; paused 2026-10-19, resume from ROADMAP.md
+- [Hebron Consults site](hebron-consults.md) — veteran-owned gov contractor site, committed locally, not pushed/deployed; open questions in README
+- [AV-WALDO](av-waldo.md) — AVW dispatch/GPS/delivery app for Kenny; folder created 2026-11-11, Phase 0 next, no code yet
+- [AVW SmartCare](avw-smartcare.md) — installed-base/PM/aftermarket platform; strategy docs drafted 2026-10-30, no code until approved
+- [AVW Marketing Workspace](avw-marketing-workspace.md) — rebuild of marketing team's ChatGPT tracker; Studio redesign approved + built on git branch studio-redesign 2026-11-17, local only, not deployed
+- [CORYNEXA](corynexa.md) — ERP product by NexuCentri (ASHE track); scoping stage 2026-11-18, no code
+- [Market Research](market-research.md) — folder created 2026-11-12 at projects/Market Research; empty, scope TBD
+- [AVW Quoting Tool](avw-quoting-tool.md) — QuickBooks Approve & Send on branch `quickbook`: works in ICA (Est #36516), local commits only, never merge w/o Ashe OK; NEXT list inside (2026-11-18); PPT parts export done 2026-11-23, service key still in .env.local

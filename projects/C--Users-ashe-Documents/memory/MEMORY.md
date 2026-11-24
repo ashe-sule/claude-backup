@@ -1,0 +1,25 @@
+- [Projects Overview](projects_overview.md) — Master list of every project in C:\Users\ashe\Documents\projects — one-line status, where its full memory lives, and the cross-project ru...
+- [Project Pc Migration](project_pc_migration.md) — New PC setup (2026-11-24) — what's installed, how memory was moved, npm install results, and what's left per NEW-PC-SETUP.md
+- [Av Waldo](av-waldo.md) — AV-WALDO — AVW dispatch/GPS/route/POD platform for driver Kenny; folder created 2026-11-11, no code yet
+- [Avw Invoice Generator](avw-invoice-generator.md) — AVW Invoice Generator — Publisher commercial-invoice replacement, live on Vercel; paused 2026-10-19, upgrades later
+- [Avw Marketing Workspace](avw-marketing-workspace.md) — AVW Marketing Workspace — rebuild of marketing team's ChatGPT tracker; Studio redesign approved + built on git branch studio-redesign (20...
+- [Avw Quoting Tool](avw-quoting-tool.md) — AVW Quoting Tool → QuickBooks push (branch `quickbook`); PROJECT STATUS: Phase 1 works end-to-end in ICA, local commits only, nothing pus...
+- [Avw Smartcare](avw-smartcare.md) — AVW SmartCare — installed-base / preventive maintenance / aftermarket platform; strategy drafted 2026-10-30, no code yet
+- [Brand Voice Professional](brand-voice-professional.md) — Ashe wants product taglines/brand copy formal and professional, not punchy or slangy
+- [Corynexa](corynexa.md) — CORYNEXA — ERP product by NexuCentri (ASHE track); folder at projects/CORYNEXA, scoping stage, no code
+- [Feedback Assertive](feedback_assertive.md) — User wants constructively assertive collaboration — calm, context-aware, firm on principles without being adversarial
+- [Github Buildup](github-buildup.md) — Ashe's locked Oct 2026–2027 build plan (Group A paid, Group B free) — ALL repos PRIVATE, showcase on ashesule.com only; hub folder location
+- [Git Identity Leak](git-identity-leak.md) — Ashe's rule: git must NEVER expose the AVW work email (or yahoo on public repos); useConfigOnly=true; noreply on public repos; check auth...
+- [Hebron Consults](hebron-consults.md) — Hebron Consults LLC website (client/friend's veteran-owned gov contractor, Dallas) — preview built 2026-10-19, not deployed
+- [Market Research](market-research.md) — Market Research project folder created 2026-11-12 at projects/Market Research; empty, no scope defined yet
+- [Nexucentri](nexucentri.md) — Ashe owns a real company, Nexucentri (nexucentri.com); products are branded 'by NexuCentri' (confirmed 2026-10-19); never use it as a fak...
+- [Product Ideas Method](product-ideas-method.md) — How to brainstorm product ideas for Ashe: always include a sweep of SaaS tools businesses pay for monthly, not just Ashe's stated domains
+- [Project Claude Backup](project_claude_backup.md) — ~/.claude backs up daily to private repo ashe-sule/claude-backup — memory/settings only, chats deliberately excluded
+- [Project Drive Mapping](project_drive_mapping.md) — Login script that maps network drives and hides H drive from File Explorer
+- [Project Github Vercel](project_github_vercel.md) — Ashe is setting up a connection between GitHub and Vercel; Node.js install was the pending step
+- [Project Qb Sync](project_qb_sync.md) — AVW QB Sync — Next.js 15 + Neon Postgres app on Vercel that syncs data to QuickBooks Desktop via QBWC. Working locally as of 2026-09-28.
+- [Project So Ship Label](project_so_ship_label.md) — AVW SO Label Printer — Windows desktop app (Electron) that looks up a JobBOSS SO and prints a 4x8 Zebra label; current v1.3.2 (2026-10-23...
+- [Two Tracks Ashe Avw](two-tracks-ashe-avw.md) — Ashe's core goal: two separate tracks — build ASHE (own money-making products) and grow AVW (bigger revenue at scale); keep them apart
+- [User Email](user_email.md) — Correct work email address for Ashe Sule at AVW Equipment
+- [User Github](user_github.md) — GitHub username for Ashe Sule — used for pushing repos and connecting to Vercel
+- [User Preferences](user_preferences.md) — Ashe's working preferences, role, and session memory instructions

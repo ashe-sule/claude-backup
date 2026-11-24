@@ -7,7 +7,7 @@
   "autoUpdatesChannel": "latest",
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark",
+  "theme": "dark-daltonized",
   "autoMode": {
     "soft_deny": [
       "$defaults",
@@ -37,9 +37,9 @@
       "**Protected IaC scopes**: None configured beyond shipped default (IAM, RBAC, networking, quota, node-pool resources tagged prod/production)",
       "### User-specific",
       "**Primary use of Claude Code**: software development — syncing QuickBooks Desktop data via a Next.js/Postgres/QBWC bridge for AVW Equipment Co",
-      "**Trusted repo**: github.com/ashe-sule/qb-sync (this repo, working directory C:\\Users\\ashe\\projects\\qb-sync) and its origin remote",
+      "**Trusted repo**: github.com/ashe-sule/qb-sync (this repo, working directory C:\\Users\\ashe\\Documents\\projects\\qb-sync) and its origin remote",
       "**Org-specific CLIs**: None configured",
-      "**Routine under C:\\Users\\ashe\\projects\\qb-sync\\ prefix**: local dev (`npm run dev`, `npm install`, lint/build/start scripts), edits to this repo's source, docs, and schema files — schema changes still require Ashe's explicit sign-off per CLAUDE.md"
+      "**Routine under C:\\Users\\ashe\\Documents\\projects\\qb-sync\\ prefix**: local dev (`npm run dev`, `npm install`, lint/build/start scripts), edits to this repo's source, docs, and schema files — schema changes still require Ashe's explicit sign-off per CLAUDE.md"
     ]
   }
 }

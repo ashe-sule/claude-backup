@@ -1,0 +1,1 @@
+- [Project status](project-status.md) — Claude Code CLI installed, PATH + Git Bash set up (2026-11-24)
