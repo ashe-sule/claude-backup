@@ -1,0 +1,3 @@
+- [Project status](project-status.md) — where we stopped, last deploy, what's waiting on Ashe
+- [Gap research Nov 2026](gap-research-2026-11.md) — competitors, Rinsed membership data, moratoria, missing data sources
+- [Decisions 2026-11-24](decisions-2026-11-24.md) — membership parked, LPR parked, live ban detection GO but must be free
