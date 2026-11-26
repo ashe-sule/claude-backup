@@ -1,5 +1,6 @@
 - [GitHub buildup plan](github-buildup.md) — ALL repos PRIVATE (2026-10-16); showcase on ashesule.com only; hub at projects/github-buildup
 - [Git identity leak](git-identity-leak.md) — NEVER let git guess/expose the AVW email; useConfigOnly is on; noreply for public repos
+- [No made-up business rules](no-made-up-business-rules.md) — never invent steps/names/rules; placeholders must be flagged + approved by Ashe or the user
 - [Product ideas method](product-ideas-method.md) — brainstorm with a 'what do businesses pay for monthly' sweep, not just named domains
 - [Two tracks: ASHE + AVW](two-tracks-ashe-avw.md) — Ashe's own products to sell vs growing AVW at scale; keep separate, tag every idea
 - [Nexucentri](nexucentri.md) — Ashe's real company; products branded "by NexuCentri" (e.g. Sealed); never a fake/phish domain
@@ -13,4 +14,5 @@
 - [Market Research](market-research.md) — folder created 2026-11-12 at projects/Market Research; empty, scope TBD
 - [PC move: secrets](pc-move-secrets.md) — DONE 2026-11-25: signing key verified+placed, backup copied, .env already here, JobBOSS Ashe_SQL_RO works (268 tables); only cleanup left
 - [AVW Thanksgiving banner](avw-thanksgiving-banner.md) — LIVE Nov 25–27 2026 on Hub (raffle drum), Visitors kiosk (leaves), Invoice Gen, PNR, Marketing WS, Electrical Schedule (banner); kiosk needs one reload
+- [Production Board (Gabi)](production-board-gabi.md) — AVW digital board to replace Trello + paper; Step 1 BUILT + tested locally 2026-11-26 (commit 48f1182, not deployed); next = Ashe review, Vercel/Neon deploy, Gabi's Trello columns
 - [AVW Quoting Tool](avw-quoting-tool.md) — QuickBooks Approve & Send on branch `quickbook`: works in ICA (Est #36516), local commits only, never merge w/o Ashe OK; NEXT list inside (2026-11-18); PPT parts export done 2026-11-23, service key still in .env.local
