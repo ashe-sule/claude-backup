@@ -14,5 +14,6 @@
 - [Market Research](market-research.md) — folder created 2026-11-12 at projects/Market Research; empty, scope TBD
 - [PC move: secrets](pc-move-secrets.md) — DONE 2026-11-25: signing key verified+placed, backup copied, .env already here, JobBOSS Ashe_SQL_RO works (268 tables); only cleanup left
 - [AVW Thanksgiving banner](avw-thanksgiving-banner.md) — LIVE Nov 25–27 2026 on Hub (raffle drum), Visitors kiosk (leaves), Invoice Gen, PNR, Marketing WS, Electrical Schedule (banner); kiosk needs one reload
-- [Production Board (Gabi)](production-board-gabi.md) — AVW digital board to replace Trello + paper; Step 1 BUILT + tested locally 2026-11-26 (commit 48f1182, not deployed); next = Ashe review, Vercel/Neon deploy, Gabi's Trello columns
+- [Production Board (Gabi)](production-board-gabi.md) — AVW digital board to replace Trello + paper; Steps 1–4 built locally (last commit b7e3370, not deployed); demo MP4 + email draft ready for Ashe to send; next = Gabi's answers, then Vercel/Neon deploy
+- [Portfolio audit 2026-11-27](portfolio-audit-2026-11-27.md) — read-only audit, 47 findings; P0 = F-001..F-008; awaiting approvals, nothing changed
 - [AVW Quoting Tool](avw-quoting-tool.md) — QuickBooks Approve & Send on branch `quickbook`: works in ICA (Est #36516), local commits only, never merge w/o Ashe OK; NEXT list inside (2026-11-18); PPT parts export done 2026-11-23, service key still in .env.local

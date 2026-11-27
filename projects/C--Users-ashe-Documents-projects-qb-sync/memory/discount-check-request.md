@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7329e78e-7a98-47ed-9f88-2bc1339e8947
-  modified: 2026-11-25T00:43:37.697Z
+  modified: 2026-11-27T16:15:36.906Z
 ---
 
 Request received 2026-11-24 (pasted meeting notes to Ashe + Goran). Source workbook: `Downloads/2026 11 November Invoice Review Template - Sales Data 11 15 2026.xlsx`. **Not started; nothing built. Only analysed.**
@@ -41,5 +41,7 @@ Next: Phase 1 design sent for approval (one Neon table proposed, or a disk file)
 - Next: OK to create table → refresh ICA with Nov data → run on ICA → compare with workbook → commit.
 
 **2026-11-24 end of session:** ICA is an OLD file (no Nov invoices); only LIVE is current. Proposed Option A: back up live (.QBB) → restore under a NEW name (e.g. AVW-COPY-2026-11.QBW) → grant qb-sync access on the copy (Admin, single-user) → run the audit there. Plus a company-file lock env (like QB_LIST_COMPANY_FILE) so the audit refuses any other file. Option B (LIVE read-only) deferred. **Ashe: "tomorrow we get a fresh copy of live."** Still NOT given: explicit OK to create table qb_discount_audit (ask again). Code still uncommitted.
+
+**2026-11-25 FIRST REAL RUN ✅** on the Test copy of LIVE: matches Goran 350/351 for Nov 1–15 (HOL01 differs: QB type 25% vs his list 20%). Pending (non-posting) invoices explain the count gap, since his P&L omits them. Excel + email to Goran saved in Downloads. Open: Pending in or out (suggested a Posting Status column), "Direct Merchant Account" = 0%?, HOL01 confirm, commit OK. Details in [[project-status]].
 
 **Open questions for Ashe (older, mostly answered):** does the Customer Discount List come from QB or a separate spreadsheet (and what's the master); what "posted" means in QB Desktop; how to handle discount % changes by date; tolerance (rounding < $0.01); who runs it (Gwen?); ICA or live file.
